@@ -1,0 +1,10 @@
+RewriteEngine On
+ErrorDocument 404 /inc/theme/404.php
+
+RewriteRule   ^([A-Za-z0-9-]+)/?$ inc/load.php?slug=$1&opt=$2   [NC,L]
+RewriteRule   ^administrator/([A-Za-z0-9-]+)/?$ inc/load.php?adminslug=$1   [NC,L]
+RewriteRule   ^administrator/edit-event/([A-Za-z0-9-]+)/?$ inc/load.php?editevent=$1   [NC,L]
+
+RewriteRule   ^book.php?$ inc/book.php [NC,L]
+RewriteRule   ^invoice.php?$ inc/invoice.php [NC,L]
+RewriteRule   ^pay.php?$ inc/pay.php [NC,L]
