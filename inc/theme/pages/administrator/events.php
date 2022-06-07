@@ -35,7 +35,7 @@ if(isset($_POST['deleteEvent'])){
               <td style="text-align:center;"><img style="max-width:50px;max-heigh:50px;height:50px;width:50px;" src="<?php if(!$event['event_image']){echo '/assets/img/no-image.jpg';}else{echo '/inc/theme/uploads/'.$event['event_image'];} ?>"></td>
               <td style="text-align:center;"><?php echo $event['event_name']; ?></td>
               <td style="text-align:center;"><?php echo $event['event_capacity']; ?></td>
-              <td style="text-align:center;">var</td>
+              <td style="text-align:center;"></td>
               <td>
                   <a href="/administrator/edit-event/<?php echo $event['id']; ?>/" class="btn btn-secondary">Edit</a>
                   <button type="submit" class="btn btn-danger" name="deleteEvent" value="<?php echo $event['id']; ?>">Del</button>
